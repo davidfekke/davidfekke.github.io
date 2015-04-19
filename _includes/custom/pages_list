@@ -1,0 +1,16 @@
+
+{% if page.url == "/blog/index.html" %}
+  <li class="active"><a href="{{ BASE_PATH }}/blog/index.html" class="active">Blog</a></li>
+{% else %}
+  <li><a href="{{ BASE_PATH }}/blog/index.html">Blog</a></li>
+{% endif %}
+{% if page.url == "/about/index.html" %}
+  <li class="active"><a href="{{ BASE_PATH }}/about/index.html" class="active">About</a></li>
+{% else %}
+  <li><a href="{{ BASE_PATH }}/about/index.html">About</a></li>
+{% endif %}
+{% if page.url == "/contact/index.html" %}
+  <li class="active"><a href="{{ BASE_PATH }}/contact/index.html" class="active">Contact</a></li>
+{% else %}
+  <li><a href="{{ BASE_PATH }}/contact/index.html">Contact</a></li>
+{% endif %}

@@ -23,11 +23,6 @@ Usage:
 {% if site.JB.pages_list.provider == "custom" %}
   {% include custom/pages_list %}
 {% else %}
-  {% if page.url == "/blog/index.html" %}
-   <li class="active"><a href="{{ BASE_PATH }}blog/" class="active">Blog</a></li>
-  {% else %}
-   <li><a href="{{ BASE_PATH }}blog/">Blog</a></li>
-  {% endif %}
   {% for node in pages_list %}
     {% if node.title != null %}
       {% if group == null or group == node.group %}

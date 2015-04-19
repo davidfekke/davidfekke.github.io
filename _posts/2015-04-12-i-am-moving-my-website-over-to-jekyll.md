@@ -6,11 +6,11 @@ tags: [Jekyll]
 ---
 {% include JB/setup %}
 
-I have decided to move my web site off of the [Orchard CMS]("http://orchardproject.net/"), and to [Jekyll]("http://jekyllrb.com").
+I have decided to move my web site off of the [Orchard CMS](http://orchardproject.net/), and to [Jekyll](http://jekyllrb.com).
 
 ![Image of Jekyll Logo]({{ site.url }}/assets/images/jekyll-workers.png)
 
-If you are not familiar with [Jekyll](http://jekyllrb.com), it is a static site generator written in Ruby. I initially decided a couple of years ago that I would move my site and blog over to Orchard because it is based on ASP.NET MVC, and I am a C# ASP.NET developer. I also write web based software using [Node.js](nodejs.org), and there are a coupld of CMSs based on Node that are pretty good. 
+If you are not familiar with [Jekyll](http://jekyllrb.com), it is a static site generator written in Ruby. I initially decided a couple of years ago that I would move my site and blog over to Orchard because it is based on ASP.NET MVC, and I am a C# ASP.NET developer. I also write web based software using [Node.js](http://nodejs.org), and there are a coupld of CMSs based on Node that are pretty good. 
 
 In the process of researching some of the Node based systems, I am came across a number of Node based static site generators. Most of them do essentially the same thing as Jekyll. They use Markdown for posts and pages, which I like.
 

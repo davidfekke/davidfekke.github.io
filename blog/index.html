@@ -11,7 +11,11 @@ group: navigation
     <span class="date">{{ post.date | date_to_string }}</span>
   </p>
   <div class="content">
-    {{ post.content }}
+    <!-- {% if post.content.size > 100 %} -->
+      {{ post.content }}
+    <!-- {% else %}
+      {{ post.content }}
+    {% endif %} -->
   </div>
 {% endfor %}
 

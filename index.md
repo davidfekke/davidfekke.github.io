@@ -4,7 +4,7 @@ theme :
   name : bootstrap-3
 ---
 {% include JB/setup %}
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">

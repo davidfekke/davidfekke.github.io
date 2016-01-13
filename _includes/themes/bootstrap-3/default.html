@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    
     <meta name="author" content="{{ site.author.name }}">
+    <meta property="og:url"           content="{{ site.production_url }}{{ page.url }}" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="{{ page.title }}" />
+    {% if page.description %}
+        <meta name="description" content="{{ page.description }}">
+        <meta property="og:description"   content="{{ page.description }}" />
+    {% endif %}
+	
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,6 +58,15 @@
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=45675194603";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div id="wrap">
       <nav class="navbar navbar-default" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->

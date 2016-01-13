@@ -65,7 +65,7 @@ While this worked, it turns out there is a much simpler and more elegant way of 
 ```Javascript
 "use strict";
 
-function Service(meetupdata, twitterdata) {
+function Service(meetupDataFN, twitterDataFN) {
 	return {
         getNextMeetup: meetupDataFN,
         getTweets: twitterDataFN
@@ -75,4 +75,5 @@ function Service(meetupdata, twitterdata) {
 module.exports = Service;
 ```
 
-In the current version of my service I am returning an object with two functions. Not only is this approach cleaner, it is also more functional. 
+In the current version of my service I am returning an object with two functions. Not only is this approach cleaner, 
+it is also more functional. I am also just passing in functions instead of whole objects.

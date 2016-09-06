@@ -16,6 +16,7 @@ author :
   github : davidfekke
   twitter : davidfekke
 #  feedburner : feedname
+gems: [jekyll-paginate]
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

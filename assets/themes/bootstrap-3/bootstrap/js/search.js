@@ -12,6 +12,7 @@ $(document).ready(function() {
 			return false;
 		}
 	});
+	$('img').addClass('img-responsive');
 });
 
 function performSearch(textOfSearch) {
